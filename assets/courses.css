@@ -1,0 +1,458 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+.courses-page {
+  padding-top: 0;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+  background-color: white;
+  font-family: "Raleway", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Merriweather", sans-serif;
+}
+.js-hide {
+  display:none;
+}
+.course-info {
+  display: block;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, .3);
+}
+.course-description {
+  position: relative;
+  border: 5px solid #56ccf2;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.2em;
+  color: white;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.course-description .text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+}
+.js-course-description {
+  display: none;
+}
+a.js-course:hover .js-course-description {
+  display: block;
+}
+/* hide highlight on touch devices*/
+.js-touch-detected a.js-course:hover .js-course-description {
+  display: none;
+}
+
+a.js-course:hover {
+  text-decoration: none;
+}
+
+a.js-course:hover .card-title {
+  color: #4183c4;
+}
+
+.navbar {
+  margin-top: 0px;
+}
+.grow {
+  transition: .2s ease-in-out;
+  transform-origin: top;
+}
+.grow:hover {
+  transform: scale(1.05) translateX(10px);
+}
+.grow:hover .course-no {
+  transform: translateY(-20px);
+}
+
+.bg-rs-blue { background-color: #1D3663 }
+.bg-white { background-color: white; }
+.bg-gray { background-color: #ecf0f1 }
+.rs-blue { color: #1D3663; }
+.dark-gray { color: #4f4f4f; }
+.white { color: #fff }
+.dark-white { color: #ecf0f1 }
+.yellow {color: #f4f142;}
+a.white {color: white;}
+a.white:hover {color: #ecf0f1;}
+a.no-underline:hover {text-decoration: none;}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 36rem;
+
+
+  background-color: #777;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.carousel-text-box {
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+}
+.featured-tag {
+  margin-right: 10px;
+  margin-bottom: 2px;
+  font-family: "Raleway", sans-serif;
+}
+.featured-subhead {
+  font-size: 14px;
+  font-weight: normal;
+}
+a.carousel-control {
+  opacity: 1;
+  width: 10%;
+  font-size: 36px;
+  text-shadow: 2px 2px #333;
+}
+
+/*Tab section*/
+.tab-header {
+  text-align: center;
+  font-size: 42px;
+  font-weight: bold;
+}
+.tab-subheader {
+  text-align: center;
+  font-size: 22px;
+}
+#myTab .nav-item {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  margin-right: 15px;
+}
+#myTab .nav-item.last {
+  margin-right: 0;
+}
+#myTab a.nav-link.active {
+  background-color: white;
+  color: #007bff;
+}
+#myTab a.nav-link {
+  background-color: #1d3663;
+  color: white;
+}
+#myTab a.nav-link:hover {
+  color: #56ccf2;
+}
+#myTab a.nav-link.active:hover {
+  color: #007bff;
+}
+
+.tab-content {
+  background-color: #fff;
+}
+
+.tab-pane-intro {
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+.line {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  border-bottom: 2px dashed #1D3663;
+  z-index: -1;
+}
+
+/* card-rs */
+.card-list-path .slick-list {
+  float: left;
+}
+.card-list .slick-list{
+  float: left;
+}
+.slick-track {
+  margin-left: 0;
+}
+.slick-disabled.arrow {
+  background-color: white;
+  color: white;
+}
+
+/*card sizes*/
+.arrow {
+  position: absolute;
+  display: inline-block !important;
+  margin: 0 auto;
+  height: 14vw;
+}
+.pin-right { right: 0; }
+.pin-left {left: 0;}
+.section-arrow {
+  margin: 0 1.2vw;
+}
+.arrow-icon {
+  text-align: center;
+  background-color: #BDBDBD;
+  border-radius: 50px;
+  color: white;
+  margin-top: 5vw;
+  text-shadow: 1px 1px 1px gray;
+}
+
+a.arrow:hover .arrow-icon {
+  background-color: #56ccf2;
+}
+a.arrow:hover.slick-disabled .arrow-icon {
+  background-color: white;
+}
+a.arrow.slick-disabled .arrow-icon {
+  background-color: white;
+  text-shadow: none;
+}
+
+.course-no {
+  font-weight: bold;
+  font-family: "Merriweather", serif;
+  text-align: center;
+  border-radius: 100px;
+  border: 2px solid #656565;
+  background-color: white;
+}
+a:hover .course-no{
+  background-color: #1D3663;
+  color: white;
+}
+.course-no {
+  height: 46px;
+  width: 46px;
+  padding-top: 4px;
+  font-size: 22px;
+}
+.more-info {
+  position: absolute;
+  width: 100%;
+  color: white;
+  font-size: calc(14px + 0.2vw);
+  text-align: center;
+  margin-top: 25%;
+}
+/*hide view details on touch devices*/
+.js-touch-detected .more-info {
+  display: none;
+}
+
+h5.card-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  line-height: 1.2em;
+  font-size: calc(18px + 0.2vw);
+  text-transform: none !important;
+  letter-spacing: normal;
+}
+.coming-soon:before{
+  float: left;
+  font-size: calc(20px + 0.3vw);
+  letter-spacing: 0.1vw;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #f2c94c;
+  width: 100%;
+  margin-top: 8vw;
+  text-align: center;
+  content: "Coming Soon";
+  text-shadow: 2px 2px black;
+  font-family: "Raleway", sans-serif;
+  z-index: 2;
+}
+
+/* slide section sizing */
+
+.card-list .slick-list{
+  margin: 0 0 0 5vw;
+  width: 74vw;
+}
+/* Showing 4 slides*/
+
+.card-list-path .slick-list {
+  width: 68vw;
+  max-width: 920px;
+  margin: 0 5vw 0 5.2vw;
+}
+.card-list-path .course-info {height: 14vw;}
+.card-list .course-info {height: 12vw;}
+/* slide dynamic sizing */
+
+.card-title { height: 70px; }
+.card-section-header {
+  margin-left: 5vw;
+}
+.card-section-subtitle {
+  margin-left: 5vw;
+  font-size: 16px;
+}
+.arrow-icon{
+  font-size: 28px;
+  font-weight: bold;
+  padding-top: 9px;
+  height: 44px;
+  width: 44px;
+}
+/* modal for touch screens*/
+.modal {
+  width: 100%;
+}
+.modal-course-image {
+  width: 100%;
+  height: 50vw;
+  max-height: 300px;
+}
+button.close-modal {
+  font-size: 24px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+/* Bump up size of carousel content */
+.carousel-caption p {
+  margin-bottom: 1.2rem;
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+
+.lg-show { display: block;}
+.lg-hide { display: none; }
+
+@media (max-width: 1400px) {
+  .card-list-path .course-info {height: 18vw;}
+  .card-list .course-info {height: 15vw;}
+}
+
+@media (max-width: 992px) {
+  .card-list-path .course-info {height: 18vw;}
+  .card-list .course-info {height: 16vw;}
+  .md-show {display: block;}
+  .md-hide { display: none; }
+  .lg-show {display: none;}
+  .lg-hide {display: block;}
+
+  /*carousel*/
+  .carousel-item {
+    height: 22rem;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h5.card-title {
+    font-size: 16px;
+  }
+  .featured-tag {
+    font-size: 12px;
+  }
+  /* tabs */
+  .tab-header { font-size: 30px; }
+  .tab-subheader { font-size: 16px; }
+  #myTab .nav-item {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    }
+
+  /* slide dynamic sizing */
+  .tab-pane-intro {
+    font-size: 18px;
+    line-height: 1.1em;
+  }
+  .course-no {
+    height: 35px;
+    width: 35px;
+    padding-top: 2px;
+    font-size: 18px;
+  }
+  .line {
+    bottom: 32px;
+  }
+
+.arrow-icon{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+    height: 38px;
+    width: 38px;
+  }
+  a.carousel-control {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  /*utility*/
+  .sm-show { display: block;}
+  .sm-hide { display: none; }
+  .md-show {display: none;}
+  .lg-show { display: none; }
+  .coming-soon:before {
+    font-size: 22px;
+    text-shadow: 1px 1px black;
+  }
+
+  /*carousel*/
+  .carousel-item {height: 20rem;}
+
+  h2 {
+    font-size: 22px;
+  }
+  .featured-tag {
+    font-size: 12px;
+  }
+  /* tabs */
+  .tab-header { font-size: 30px; }
+  .tab-subheader { font-size: 16px; }
+  .card-list-path .course-info {height: 32vw;}
+  .card-list-path .slick-list {
+    margin: 0;
+    width: 82vw;
+    padding: 0 5vw 0 7vw;
+  }
+  .card-list .slick-list{
+    margin: 0;
+    width: 90vw;
+    padding: 0 6vw 0 0;
+  }
+  .card-section-header, .card-section-subtitle {
+   margin-left: 0;
+  }
+  .card-list .course-info {height: 30vw;}
+  /* slide dynamic sizing */
+
+  .tab-pane-intro {
+    font-size: 16px;
+    line-height: 1.1em;
+  }
+  #myTab .nav-item {
+    margin-right: 0px;
+    margin-bottom: 5px;
+  }
+  #myTab .nav-item.last {
+    margin-bottom: 0px;
+  }
+  .coming-soon:before {
+    font-size: 17px;
+    margin-top: 18vw;
+    text-shadow: 1px 1px black;
+  }
+}
