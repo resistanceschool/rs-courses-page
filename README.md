@@ -14,7 +14,7 @@
 
 #### Sample config
 
-```json
+```javascript
 {"features":
   [
    {
